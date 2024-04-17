@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 10%;
+            background-color: #3C4156;
+        }
+
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #1B1B1D;
+            /* padding-top: 15%; */
+            width: 20%;
+            border-radius: 8px;
+            /* height: 300px; */
+            margin: 0 auto;
+        }
+
+        .btns {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 5px;
+            margin-bottom: 20px;
+        }
+
+        #countdown {
+            color: #EE678B;
+            font-size: 50px;
+            font-weight: 200;
+        }
+
+        .reset_value {
+            color: #EE678B;
+        }
+
+        .btns button {
+            padding: 7px 20px;
+            border-radius: 20px;
+            border: none;
+            transition: all 0.5s ease-in-out;
+        }
+        .btns button:hover {
+            background-color: #1B1B1D;
+            color: #fff;
+            border: 1px solid gold;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <p id="countdown">0</p>
+        <div class="btns">
+            <button class="start_btn">Start</button>
+            <button class="reset_btn">Reset</button>
+            <button class="stop_btn">Stop</button>
+            <button class="getime_btn">getTime</button>
+            <button class="cleartime_btn">ClearTime</button>
+        </div>
+        <div class="reset_value"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
